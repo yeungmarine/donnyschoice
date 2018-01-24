@@ -445,7 +445,7 @@ To minimize the amount of HTTP requests combine all CSS files into one single fi
 								<div class="prev-pricebtn">
 									<p style="font-size: 20px;font-weight: bold;height: 50px;">{{a.name}}</p>
 									<p>Price: {{a.price | currency: "Php " : 2}}</p>
-									<p>Quantity: <input class="qty" type="number" min="0" ng-model="item.qty"/></p>
+									<p stlye="font-color: red;">Quantity: <input class="qty" type="number" min="0" ng-model="item.qty"/></p>
 									<p><button ng-click="addToCart(a)">Add to Cart</button></p>
 								</div>
 								
