@@ -1,0 +1,410 @@
+<!--
+This HTML5 website is part of a HTML5 / CSS3 tutorial created by Christoph Anastasiades (http://www.lingulo.com)
+Feel free to use it for your personal or commercial projects and/or change it in any way you like.
+
+USE THIS TEMPLATE ON YOUR OWN RISK AND PLEASE BE AWARE THAT I DO NOT GUARANTEE THE CORRECTNESS OF THE FILES
+DOWNLOADED ON http://www.lingulo.com AND WILL NOT BE RESPONSIBLE FOR ANY LOSS OR DAMAGE CAUSED THROUGH THE USE OF THESE FILES.
+
+I would be happy if you put a link to http://www.lingulo.com somewhere on your website to support my work. However this is not obligatory.
+
+Please note that you may not distribute the files downloaded from Lingulo.com or offer them for download.
+
+
+What you need to do to make this page work:
+
+- Find images for the jQuery Slider and for all the icons (the icons used in the tutorial are from http://www.iconarchive.com/show/icons8-metro-style-icons-by-visualpharm.1.html)
+
+To minimize the amount of HTTP requests combine all CSS files into one single file.
+
+!-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order Now! | Donny's Choice</title>
+        <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+        <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+		
+		<!-- ANGULAR -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<!-- <link rel="stylesheet" href="css/w3.css"> -->
+		<!-- ANGULAR -->
+		
+		<!-- MODAL -->
+		<link rel="stylesheet" href="css/bootstrap-modal.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!-- MODAL -->
+		
+		
+        <script src="js/vendor/modernizr.min.js"></script>
+        <script src="js/vendor/respond.min.js"></script>
+        
+        <!-- include extern jQuery file but fall back to local file if extern one fails to load !-->
+        <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js\/vendor\/1.7.2.jquery.min.js"><\/script>')</script>
+        
+        <script src="lightbox/js/lightbox.js"></script>
+        <script src="js/vendor/prefixfree.min.js"></script>
+        <script src="js/vendor/jquery.slides.min.js"></script>
+        <script src="js/script.js"></script>
+        
+		<link rel="icon" type="image/png" href="img/header/logo.png">
+		
+		
+	</head>
+
+	<body>
+	
+		<div id="header-spacer" >
+			<header>
+				<div class="toggleMobile">
+					<span class="menu1"></span>
+					<span class="menu2"></span>
+					<span class="menu3"></span>
+				</div>
+				<div id="mobileMenu">
+					<ul>
+						<li><a href="businesses.html">Businesses</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="contactus.html">Contact Us</a></li>
+					</ul>
+				</div>           
+				
+				<div class="logo">
+					<a href="index.html"><img src="img/header/logo.png" alt="logo" ></a>
+				</div>
+				
+				<nav>
+					<h2 class="hidden">Our navigation</h2>
+					<ul>
+						<li><a href="businesses.html">Businesses</a></li>
+						<li class="dropdown">
+							<a href="products.html" class="dropbtn">Products</a>
+							<div class="dropdown-content">
+								
+								<div class="sub-menu">
+								<a href="products.html#live" class="sub-menu-btn">Live</a>
+								
+									<div class="sub-menu-content">
+									<a href="products.html#fish">Fish</a>
+									<a href="products.html#crustaceans">Crustaceans</a>
+									<a href="products.html#shellfish">Shellfish</a>
+									<a href="products.html#others1">Others</a>
+									</div>
+								</div>
+								<a href="products.html#fresh">Fresh</a>
+								<a href="products.html#frozen">Frozen</a>
+								<a href="products.html#other">Others</a>
+							</div>
+						</li>
+						<li><a href="contactus.html">Contact Us</a></li>
+						<li><a href="order.html" class="active">Order</a></li>
+					</ul>  
+				</nav>
+				
+			</header>
+		</div>
+			
+			
+
+        <section id="spacer">  
+        	<h2 class="hidden">Dolor sit amet</h2>          
+        </section>
+		
+		<script src="js/cartController.js"></script>
+		<link rel="stylesheet" href="css/order.css">
+		<script src="https://use.fontawesome.com/8028fbd1fe.js"></script>
+
+		<style>
+			
+			div.btn-container{
+				display:block;
+				margin-top: 5px;
+				margin-bottom: 5px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				
+				
+			}
+			div.gallery {
+				position:relative;
+				padding: 0 15px;
+				float: left;
+				width: 25%;
+				font-size:15px;
+				
+			}
+
+			div.gallery:hover {
+				
+			}
+
+			div.gallery span{
+				display:block;
+				height: 30px;
+				font-weight:700;
+				margin: 5px 0;
+				
+			}
+			
+			div.img-cont{
+				
+			}
+
+			div.gallery img {
+				max-height:140px;
+				max-width:600px;
+				width: 100%;
+				height: auto;
+				
+			}
+
+			div.desc p {
+				font-size:13px;
+				line-height: 15px;
+			}
+			
+			
+			div.desc button{
+				display: block;
+				width: 100%;
+				border: none;
+				background-color: #5f5f5f;
+				color: white;
+				padding: 5px 0;
+				font-size: 15px;
+				cursor: pointer;
+				text-align: center;
+			}
+			
+			div.desc button:hover{
+				background-color: #ddd;
+				color: black;
+			
+			}
+			.tabs{
+				clear: right;
+				padding-bottom:10px;
+			}
+			
+			
+			
+			
+		</style>
+		
+		
+		
+		<div ng-app="shoppingCart" ng-controller="cartCtrl" id="body-container" class="clearfix">
+			<!-- Trigger the modal with a button -->
+			<div class="pageTitle">
+				<h1>Order Now!</h1>
+				<hr>
+			</div>
+			<div class="product-container clearfix">
+				<div class="btn-container clearfix">
+					<button type="button" class="modal-btn" data-toggle="modal" data-target="#myModal">
+					<i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>  {{cartItems.length}} items</button>
+				</div>
+
+				<div class="tabs">
+					<!-- TABS BUTTON -->
+					<div class="tab">
+						<button class="tablinks active" onclick="openCity(event, 'Live')" id="defaultOpen">Live</button>
+						<button class="tablinks" onclick="openCity(event, 'Frozen')">Frozen</button>
+						<button class="tablinks" onclick="openCity(event, 'Imported')">Imported</button>
+						<button class="tablinks" onclick="openCity(event, 'Fresh')">Fresh</button>
+					</div>
+					<!-- TAB CONTENT -->
+				</div>
+				<div class="tabcontent-wrap">
+					<div id="Live" class="tabcontent">
+					
+						<div ng-repeat="item in live track by item.id" >
+							<div class="gallery">
+								<div class="img-cont">
+									<a href="">
+									<img src="{{item.image}}" >
+									</a>
+								</div>
+								<div class="desc">
+									<span>{{item.name}}</span>
+									<p>Price: {{item.price | currency: "Php " : 2}}</p>
+									<p>Unit: {{item.unit}}</p>
+									<p>Quantity: <input class="qty" type="number" min="0" ng-model="item.qty"/></p>
+									<!-- <p><i ng-click="addToCart(item)" class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></p> -->
+									<p><button ng-click="addToCart(item)" class="block" type="button">Add to Cart</button></p>
+								</div>
+								<hr>
+							</div>
+						</div>
+					
+					</div>
+
+					<div id="Frozen" class="tabcontent" style="display:none">
+						<div ng-repeat="item in frozen track by item.id" >
+							<div class="gallery">
+								<a href="">
+								<img src="{{item.image}}">
+								</a>
+								<div class="desc">
+									<span>{{item.name}}</span>
+									<p>Price: {{item.price | currency: "Php " : 2}}</p>
+									<p>Unit: {{item.unit}}</p>
+									<p>Quantity: <input class="qty" type="number" min="0" ng-model="item.qty"/></p>
+									<!-- <p><i ng-click="addToCart(item)" class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></p> -->
+									<p><button ng-click="addToCart(item)">Add to Cart</button></p>
+								</div>
+								<hr>
+							</div>
+						</div>
+					</div>
+
+					<div id="Imported" class="tabcontent" style="display:none">
+						<div ng-repeat="item in imported track by item.id" >
+							<div class="gallery">
+								<a href="">
+								<img src="{{item.image}}">
+								</a>
+								<div class="desc">
+									<span>{{item.name}}</span>
+									<p>Price: {{item.price | currency: "Php " : 2}}</p>
+									<p>Unit: {{item.unit}}</p>
+									<p>Quantity: <input class="qty" type="number" min="0" ng-model="item.qty"/></p>
+									<!-- <p><i ng-click="addToCart(item)" class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></p> -->
+									<p><button ng-click="addToCart(item)">Add to Cart</button></p>
+								</div>
+								<hr>
+							</div>
+						</div>
+					</div>
+				  
+					<div id="Fresh" class="tabcontent" style="display:none">
+						<div ng-repeat="item in fresh track by item.id" >
+							<div class="gallery">
+								<a href="">
+								<img src="{{item.image}}">
+								</a>
+								<div class="desc">
+									<span>{{item.name}}</span>
+									<p>Price: {{item.price | currency: "Php " : 2}}</p>
+									<p>Unit: {{item.unit}}</p>
+									<p>Quantity: <input class="qty" type="number" min="0" ng-model="item.qty"/></p>
+									<!-- <p><i ng-click="addToCart(item)" class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></p> -->
+									<p><button ng-click="addToCart(item)">Add to Cart</button></p>
+								</div>
+								<hr>
+							</div>
+						</div>
+					</div>
+					<br>
+				</div>
+			</div>	
+			<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg">
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i> Your Cart</h4>
+						</div>
+						<div class="modal-body">
+							<table>
+								<tr ng-show="cartItems.length > 0 ">
+									<th class="th1">No.</td>
+									<th class="th2">Item</th>
+									<th class="th3">Price</td>
+									<th class="th4">Qty</th>
+									<th class="th5">Total</th>
+									<th class="th6"></th>
+								</tr>
+								<tr ng-repeat="x in cartItems track by $index">
+									<td><img src="{{x.image}}"></td>
+									<td>{{x.name}}</td>
+									<td>{{x.price | currency: "Php " : 2}}</td>
+									<td><input class="qty" type="number" min="0" ng-model="x.qty"/> kgs.</td>
+									<td>{{x.price * x.qty| currency: "Php " : 2}}</td>
+									<!-- <td><button ng-click="removeItem($index)">Delete</td> -->
+									<td><i ng-click="removeItem($index)" class="fa fa-trash fa-lg" aria-hidden="true"></i></td>
+								</tr>
+								<tr ng-show="cartItems.length == 0 ">
+									<td></td>
+									<td></td>
+									<td>Cart is empty.</td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr ng-show="cartItems.length > 0 ">
+									<td><strong>Total:</strong></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><strong>{{Total() | currency: "Php " : 2}} </strong></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+		
+		
+		
+        <footer>
+        	<h2 class="hidden">Our footer</h2>
+            <section id="copyright">
+            	<h3 class="hidden">Copyright notice</h3>
+                <div class="wrapper">
+                    <div class="social">
+                        <a href="javascript:void(0)"><img src="img/icons/icon6.png" alt="Some alt text" width="25"/></a>
+                        <a href="javascript:void(0)"><img src="img/icons/icon7.png" alt="Some alt text" width="25"/></a>
+                        <a href="javascript:void(0)"><img src="img/icons/icon8.png" alt="Some alt text" width="25"/></a>
+                        <a href="javascript:void(0)"><img src="img/icons/icon9.png" alt="Some alt text" width="25"/></a>
+                        <a href="javascript:void(0)"><img src="img/icons/icon10.png" alt="Some alt text" width="25"/></a>
+                    </div>
+                     &copy;  2017 <a href="http://www.example.com">Yeung Marine Holdings, Inc.</a> | All Rights Reserved.
+                </div>
+            </section>
+            <section class="wrapper">
+            	<h3 class="hidden">Footer content</h3>
+                <article class="column">
+                    <h4>Donny’s Choice Food Processing</h4>
+                    <p>
+						Headed by Mr. Donny Yeung, who have been in the seafood
+						business for more than 30 years. Under its umbrella, there are four business entities with
+						combined workforce of more than 400 employees: Aside from the marine products business the
+						group plans to expand its exportation of fruits within Asia in the next 2 years.
+					</p>
+                </article>
+                <article class="column midlist">
+                    <h4>Businesses</h4>
+                    <ul>
+                        <li><a href="businesses.html#YMPI">Yeung Marine Products Inc.</a></li>
+                        <li><a href="businesses.html#KMBT">King Marine Bio Technology Inc</a></li>
+                        <li><a href="businesses.html#DCF">Donny's Choice Food Processing Export and Import Corp.</a></li>
+                        <li><a href="businesses.html#DFC">Donreal Forwarders Corporation</a></li>
+						
+                    </ul>
+                </article>
+                <article class="column rightlist">
+                    <h4>Parañaque Office</h4>
+						<p>Address: 4450 D. Campos St., Don Galo District 1, Parañaque City Metro Manila, Philippines.</p>
+						<p>Email: kiirti.cercado@yeungmarineholdings.com</p>
+						<p>Tel. No.: 853-0520</p>
+						<p>Fax No.: 854-9421</p>
+                    <br class="clear"/>
+                </article>
+            </section>
+        </footer>
+	</body>
+</html>

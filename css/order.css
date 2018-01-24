@@ -1,0 +1,136 @@
+/*  					*/
+/* 						*/
+/* MODAL AND TABLE CSS  */
+/*  					*/
+/*  					*/
+
+table, th , td  {
+	/* <!-- border: 1px solid grey; --> */
+	border-collapse: collapse;
+	padding: 2px;
+	font-size:15px;
+	text-align:center;	
+	border-bottom: 1px solid grey;
+	margin:auto;	
+}	
+table tr:nth-child(odd) {
+	background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+	background-color: #ffffff;
+}
+table tr:hover {
+	background-color:#939393;
+}
+.qty{
+	width:50px;
+}
+table .th1 {
+	width: 5%;
+}
+table .th2{
+	width: 45%;
+}
+table .th3{
+	width: 15%;
+}
+table .th4{
+	width: 5%;
+}
+table .th5{
+	width: 15%;
+}
+table .th6{
+	width: 15%;
+}
+
+table img{
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+}
+	/* Style the tab */
+.tab {
+	overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #2C4874;
+	clear:right;
+	/* padding-left:30px; */
+}
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: #2C4874;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+	color: #fff;
+	width:25%;
+	/* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+	/* background-color: red; */
+    color: #b49b0d;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+    /* background-color: red; */
+	color: #b49b0d;
+}
+.fa {
+	cursor:pointer;
+	padding: 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.modal-btn{
+	
+	border-radius: 8px;
+	background-color: #2c4874; 
+    border: 2px solid #2c4874;
+    color: #fff;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	position: relative;
+	float:right;
+}
+.modal-btn:hover{
+    border: 2px solid #2c4874;
+	color: #b49b0d;
+}
+
+@media (max-width: 500px)	
+{
+	
+	.modal-btn{
+		left:0;
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
