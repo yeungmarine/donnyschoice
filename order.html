@@ -247,7 +247,7 @@ To minimize the amount of HTTP requests combine all CSS files into one single fi
 
 					<div id="Frozen" class="tabcontent" style="display:none">
 						<div ng-repeat="item in frozen track by item.id" >
-							<div class="gallery">
+							<div class="gallery" ng-hide="item.id == 39">
 								<a href="">
 								<img src="{{item.image}}">
 								</a>

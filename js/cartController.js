@@ -154,7 +154,7 @@ var app = angular.module("shoppingCart",[]);
 		];
 		
 		$scope.productInfo = [];
-		$scope.productPreview = function (b) {
+		$scope.productPreview = function (b) { 
 			$scope.productInfo.push(angular.extend({},b));
 		}
 		$scope.removeItem1 = function (a){
