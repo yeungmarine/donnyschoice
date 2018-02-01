@@ -834,7 +834,7 @@ button.close {
   z-index: 1050;
   -webkit-overflow-scrolling: touch;
   outline: 0;
-  margin-top:110px;
+  margin-top:80px;
   
 }
 .modal.fade .modal-dialog {
